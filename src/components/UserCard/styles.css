@@ -1,0 +1,12 @@
+.user-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 302px;
+    height: 410px;
+    border: 1px black solid;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+}
