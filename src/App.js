@@ -1,59 +1,60 @@
 
 import './App.css';
-import UserCard from './components/UserCard/UserCard';
+import Cards from './components/Cards';
+import Anna from './assets/anna-bia.png'
+import Charles from './assets/charles-santos.png'
+import Kelvin from './assets/kelvin-costa.png'
+import Mario from './assets/mario-hisashi.png'
 
 const users = [
   {
-
+    avatar: Kelvin,
     nome: 'Kelvin Costa',
     instagram: '@costa',
-    seguidores: 140,
-    seguindo: 270
+    seguidores: '140 seguidores',
+    seguindo: '270 seguindo'
   },
   {
+    avatar: Charles,
     nome: 'Charles Santos',
     instagram: '@charles.santos',
-    seguidores: 302,
-    seguindo: 419
+    seguidores: '302 seguidores',
+    seguindo: '419 seguindo'
   },
   {
-
+    avatar: Anna,
     nome: 'Anna Bia',
     instagram: '@anab',
-    seguidores: 842,
-    seguindo: 150
+    seguidores: '842 seguidores',
+    seguindo: '150 seguindo'
   },
   {
+    avatar: Mario,
     nome: 'Mario Hisashi',
     instagram: '@hisashi',
-    seguidores: 28,
-    seguindo: 17
+    seguidores: '28 seguidores',
+    seguindo: '17 seguindo'
   }
 ]
 
 function App() {
-
-
-
   return (
-
 
     <div className="conteiner">
 
-      {users.map((user) => {
-        <UserCard
-          nome={user.name}
-          instagram={user.name}
+      {users.map((user) => (
+        <Cards
+          avatar={user.avatar}
+          nome={user.nome}
+          insta={user.instagram}
           seguidores={user.seguidores}
           seguindo={user.seguindo}
-        />
-      })}
+        />))}
+
 
 
     </div>
   )
-
-
 
 }
 

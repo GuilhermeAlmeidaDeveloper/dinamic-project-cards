@@ -1,0 +1,51 @@
+.card {
+
+    width: 302px;
+    height: 410px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 122.92px;
+    height: 122.92px;
+    border-radius: 50%;
+    border: 10px solid rgba(172, 166, 166, 0.137)
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #131E30;
+}
+
+.insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #131E30;
+    font-weight: normal
+}
+
+.seguidores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+
+}
+
+.seguindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+}
